@@ -45,7 +45,7 @@ for i in arreglo
     end
 end
 puts contador
-=end    
+
 #Elevar al cuadrado
 arreglo = [2,4,6,2,1]
 aux = []
@@ -53,4 +53,18 @@ for i in arreglo
     aux.push(i*i)
 end
 arreglo = aux
-puts arreglo    
+puts arreglo
+=end    
+
+#Eliminar números negativos
+arreglo = [-10,4,-2,5]
+aux = []
+for i in arreglo
+    if i < 0
+        aux.push(0)
+    elsif 
+        aux.push(i)
+    end
+end
+arreglo = aux
+puts arreglo
