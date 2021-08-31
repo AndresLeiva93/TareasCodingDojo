@@ -35,7 +35,6 @@ puts suma/arreglo.length
 arr = (1..255).to_a.reject { |elem| elem.even? }
 puts arr
 
-=end
 #Mayor que Y
 arreglo = [15,23,1,-2,7]
 y = 3
@@ -46,5 +45,12 @@ for i in arreglo
     end
 end
 puts contador
-    
-    
+=end    
+#Elevar al cuadrado
+arreglo = [2,4,6,2,1]
+aux = []
+for i in arreglo
+    aux.push(i*i)
+end
+arreglo = aux
+puts arreglo    
