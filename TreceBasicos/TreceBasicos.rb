@@ -14,13 +14,13 @@ for i in 0..255
     suma += i
     puts "Nuevo numero: #{i} Suma: #{suma}" 
 end
-=end
 
 #Recorriendo un arreglo
 for i in [1,4,2,6]
     puts i
 end
+=end
 
-
-
+#Encontrar el máximo
+puts [43,5,6,-1,-5].max
 
