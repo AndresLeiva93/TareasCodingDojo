@@ -77,20 +77,24 @@ for i in arreglo
 end
 resultado["Promedio"] = suma/arreglo.length
 puts resultado
-=end 
 
 #Cambiar los valores en el arreglo
-def a(arr)
-    temp = arr[0]
-    arr[0]=arr[arr.length-1]
-    arr[arr.length-1]=temp
-    return  arr
+arreglo=[1,5,63,3]
+def cambio(lista)
+    lista.each_index {|i| lista[i] = lista[i+1]}
+    lista[-1] = 0
+    return lista
+end
+puts cambio(arreglo)
+
+=end
+
+#Números a cadenas
+arreglo = [-4,7,-4]
+def numeros(lista)
+    lista.each_index {|i| lista[i] = 'Dojo' if lista[i] < 0}
+    return lista
 end
 
-puts a([1,5,2,6,7])
-
-    
-    
-
-
+puts numeros(arreglo)
 
