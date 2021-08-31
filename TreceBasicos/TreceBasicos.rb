@@ -19,8 +19,15 @@ end
 for i in [1,4,2,6]
     puts i
 end
-=end
 
 #Encontrar el máximo
 puts [43,5,6,-1,-5].max
+=end
 
+#Promedio
+suma = 0
+arreglo = [2,10,5,222] 
+for i in arreglo
+    suma += i
+end
+puts suma/arreglo.length
