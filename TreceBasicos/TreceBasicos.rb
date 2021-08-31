@@ -22,7 +22,6 @@ end
 
 #Encontrar el máximo
 puts [43,5,6,-1,-5].max
-=end
 
 #Promedio
 suma = 0
@@ -31,3 +30,8 @@ for i in arreglo
     suma += i
 end
 puts suma/arreglo.length
+=end
+
+#Arreglo con números impares
+arr = (1..255).to_a.reject { |elem| elem.even? }
+puts arr
