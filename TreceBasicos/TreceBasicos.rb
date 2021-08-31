@@ -53,8 +53,7 @@ for i in arreglo
     aux.push(i*i)
 end
 arreglo = aux
-puts arreglo
-=end    
+puts arreglo   
 
 #Eliminar números negativos
 arreglo = [-10,4,-2,5]
@@ -68,3 +67,21 @@ for i in arreglo
 end
 arreglo = aux
 puts arreglo
+=end 
+
+#Max, Min, y Promedio
+arreglo = [-10,4,-2,5]
+resultado = {}
+resultado["Maximo"] = arreglo.max
+resultado["Minimo"] = arreglo.min
+suma = 0
+for i in arreglo
+    suma += i
+end
+resultado["Promedio"] = suma/arreglo.length
+puts resultado
+    
+    
+
+
+
