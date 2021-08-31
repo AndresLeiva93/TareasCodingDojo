@@ -30,8 +30,21 @@ for i in arreglo
     suma += i
 end
 puts suma/arreglo.length
-=end
 
 #Arreglo con números impares
 arr = (1..255).to_a.reject { |elem| elem.even? }
 puts arr
+
+=end
+#Mayor que Y
+arreglo = [15,23,1,-2,7]
+y = 3
+contador = 0
+for i in arreglo
+    if i > y 
+      contador+=1
+    end
+end
+puts contador
+    
+    
