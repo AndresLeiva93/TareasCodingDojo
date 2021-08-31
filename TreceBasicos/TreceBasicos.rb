@@ -36,15 +36,13 @@ arr = (1..255).to_a.reject { |elem| elem.even? }
 puts arr
 
 #Mayor que Y
-arreglo = [15,23,1,-2,7]
-y = 3
-contador = 0
-for i in arreglo
-    if i > y 
-      contador+=1
-    end
+arreglo = [2,7,3,5,8]  
+def MayorQueY(lista,y)
+    count = 0
+    lista.each {|num| count +=1 if num > y}
+    return count
 end
-puts contador
+puts MayorQueY(arreglo, 4)
 
 #Elevar al cuadrado
 arreglo = [2,4,6,2,1]
@@ -67,7 +65,6 @@ for i in arreglo
 end
 arreglo = aux
 puts arreglo
-=end 
 
 #Max, Min, y Promedio
 arreglo = [-10,4,-2,5]
@@ -80,6 +77,18 @@ for i in arreglo
 end
 resultado["Promedio"] = suma/arreglo.length
 puts resultado
+=end 
+
+#Cambiar los valores en el arreglo
+def a(arr)
+    temp = arr[0]
+    arr[0]=arr[arr.length-1]
+    arr[arr.length-1]=temp
+    return  arr
+end
+
+puts a([1,5,2,6,7])
+
     
     
 
